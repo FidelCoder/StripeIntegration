@@ -1,5 +1,5 @@
 const { createCustomer, chargeCustomer } = require('../services/stripeService');
-const stripe = require('stripe')("sk_test_51Nwiv8KyrenLPb5MbU0nFC5EMqAQ0pw973dHfSKBB5VlU0BuN6Nh30oKgmpRuQexelG33Ci3Q4354sBvp22LYDjb00RhoCZV26");
+const stripe = require('stripe')("SECRET_KEY");
 
 const createCustomerHandler = async (req, res) => {
   const { name, email, paymentMethodId } = req.body;
